@@ -1,0 +1,178 @@
+@import "https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap";
+
+:root {
+    --cl-1: #E0E8FF;
+    --cl-2: #3829E0;
+    --cl-3: #F5F7FF;
+    --cl-4: #7280A7;
+    --cl-5: #1F2F56;
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    --fs-xl: 1.5rem;
+    --fs-lg: 1.125rem;
+    --fs-md: 1rem;
+    --fs-sm: 0.5rem;
+
+    --mb-xl: 2em;
+    --mb-lg: 1.5em;
+    --mb-md: 1em;
+    --mb-sm: 0.5em;
+    --mb-xs: 0.25em;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+h1,
+h2 {
+    color: var(--cl-5);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--cl-4);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* */
+.order {
+    min-height: 100vh;
+    background-image: url("../assets/img/pattern-background-mobile.svg");
+    background-color: var(--cl-1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+}
+
+.order-wrap {
+    min-height: inherit;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.order-card {
+    width: 90%;
+    max-width: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.order-row-1 {
+    height: auto;
+}
+
+.order-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.order-row-2 {
+    padding: 2em;
+    background-color: #FFFFFF;
+}
+
+.order-title,
+.order-descr {
+    text-align: center;
+}
+
+.order-title {
+    font-weight: var(--fw-900);
+    margin-bottom: var(--mb-sm);
+}
+
+.order-descr {
+    margin-bottom: var(--mb-md);
+}
+
+.order-plan {
+    background-color: var(--cl-3);
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: var(--mb-lg);
+}
+
+.order-icon {
+    margin-right: var(--mb-lg);
+}
+
+.order-year {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-900);
+}
+
+.order-link {
+    color: var(--cl-2);
+    font-weight: var(--fw-900);
+}
+
+.order-btn {
+    display: block;
+    text-decoration: none;
+    font-weight: var(--fw-700);
+}
+
+.order-btn-1 {
+    text-align: center;
+    color: var(--cl-3);
+    padding: 1em;
+    background-color: var(--cl-2);
+    margin-bottom: var(--mb-lg);
+    border-radius: 10px;
+}
+
+.order-btn-2 {
+    width: max-content;
+    margin: 0 auto;
+    color: var(--cl-4);
+}
+
+/* Active States */
+.order-link:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.order-btn-1:hover {
+    opacity: 0.8;
+}
+
+.order-btn-2:hover {
+    color: var(--cl-5);
+}
+
+/* Media Queries */
+@media (min-width: 32em) {
+    .order {
+        background-image: url("../assets/img/pattern-background-desktop.svg");
+    }
+
+    .order-card {
+        max-width: 420px;
+    }
+}
