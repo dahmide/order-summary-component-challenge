@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/dahmide/order-summary-component-challenge.git)
-- Live Site URL: [Netlify](osc-dahmide-frontendmentor.netlify.app)
+- Live Site URL: [Netlify](https://osc-dahmide-frontendmentor.netlify.app)
 
 ## My process
 
